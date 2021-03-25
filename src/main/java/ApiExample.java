@@ -1,8 +1,3 @@
-/**
- * Sample Java code for youtube.channels.list
- * See instructions for running these code samples locally:
- * https://developers.google.com/explorer-help/guides/code_samples#java
- */
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
@@ -129,42 +124,7 @@ public class ApiExample {
 
             i++;
         }
-        /*System.out.println(videoResp.toPrettyString());
-        JsonObjectParser objectParser = JSON_FACTORY.createJsonObjectParser();
-        Reader inputStream = new StringReader(videoResp.toPrettyString());
-        //Video vid = objectParser.parseAndClose(inputStream, Video.class);
-        Video vid = JSON_FACTORY.fromString(videoResp.toString(), Video.class);
-        inputStream.close();
-        System.out.println("\n");
-        System.out.println(vid.toPrettyString());
-        System.out.println(        vid.getEtag());
 
-
-        System.out.println(vid.getId());
-        /*System.out.println();
-        System.out.println(uploaded);
-        String vidId = find(uploaded.toString(), "videoId");
-        System.out.println(vidId);
-        Video video = new Video();
-        video.setId(vidId);
-        VideoSnippet snippet = new VideoSnippet();
-        snippet.setTitle("Yooo");
-
-        YouTube.Videos.Update update = youtubeService.videos().update("snippet.title", video);
-        video.setSnippet(snippet);
-        Video resp = update.execute();
-        System.out.println(resp);*/
-
-
-        //YouTube.Videos.List videos = youtubeService.videos().list("statistics");
-        //VideoListResponse req = videos.setId("jZ11KrNeXQM").execute();
-
-
-        /*YouTube.Channels.List request = youtubeService.channels()
-                .list("snippet,contentDetails,statistics");
-        ChannelListResponse response = request.setForUsername("GoogleDevelopers").execute();
-        System.out.println(response.getEventId());
-        System.out.println(response);*/
 
     }
 
