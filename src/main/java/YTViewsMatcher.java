@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
-public class ApiExample {
+public class YTViewsMatcher {
     private static final String CLIENT_SECRETS= "C:\\Users\\Rith\\Documents\\GitHub\\YTTest\\src\\main\\resources\\client_secret.json";
     private static final Collection<String> SCOPES =
             Arrays.asList("https://www.googleapis.com/auth/youtube.force-ssl");//Arrays.asList("https://www.googleapis.com/auth/youtube.readonly", "https://www.googleapis.com/auth/youtube.force-ssl", "https://www.googleapis.com/auth/youtube");
@@ -35,7 +35,7 @@ public class ApiExample {
      */
     public static Credential authorize(final NetHttpTransport httpTransport) throws IOException {
         // Load client secrets.
-        InputStream in = new FileInputStream(CLIENT_SECRETS);//ApiExample.class.getResourceAsStream(CLIENT_SECRETS);
+        InputStream in = new FileInputStream(CLIENT_SECRETS);//YTViewsMatcher.class.getResourceAsStream(CLIENT_SECRETS);
         GoogleClientSecrets clientSecrets =
                 GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
         // Build flow and trigger user authorization request.
